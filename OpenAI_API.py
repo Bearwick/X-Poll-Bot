@@ -8,7 +8,6 @@ api_key = os.environ.get("Poll_Bot_OpenAI_API_Key")
 client = OpenAI(api_key=api_key)
 
 def fetch_polls_openAI(polls_to_fetch):
-    poll_questions = get_questions()
     questions_json = read_json()
     # Base prompt for generating polls
     base_prompt = f'Generate {polls_to_fetch} polls in the theme of "Smarter than a Fifth Grader" in JSON format. Each poll should contain a question and between two to four answer options. Questions should be a maximum of 280 characters, and each answer should be a maximum of 25 characters.'
