@@ -1,7 +1,7 @@
 import json
 import os
 from openai import OpenAI
-from Storage import get_questions, read_json
+from Storage import read_json
 
 # Set up the API client
 api_key = os.environ.get("Poll_Bot_OpenAI_API_Key")
